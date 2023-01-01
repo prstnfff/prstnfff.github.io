@@ -4,9 +4,6 @@ class Header extends HTMLElement {
         this.pageID = this.getAttribute('data-page-id')
     }
 
-    
-
-
     connectedCallback(){
 
         let indexClassDec = this.pageID === 'index' ? 'active-page-link' : ''
@@ -15,9 +12,9 @@ class Header extends HTMLElement {
 
         this.innerHTML= 
             `<header>
-                <a class = "nameplate ${indexClassDec}" href = './index.html'>Preston White</a>
-                <a ${expClassDec} href = './experience.html'>Experience</a>
-                <a ${projectsClassDec} href = './projects.html'>Projects</a>
+                <a class = "nameplate ${indexClassDec}" href = 'docs/index.html'>Preston White</a>
+                <a ${expClassDec} href = 'docs/experience.html'>Experience</a>
+                <a ${projectsClassDec} href = 'docs/projects.html'>Projects</a>
             </header>`
     }
 }
